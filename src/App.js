@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+import { Container, Grid } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="false" disableGutters>
+      <Grid container>
+        <Grid item xs={2}>
+          <Grid container>
+            <Grid item xs={3} sx={{ bgcolor: "#111111", height: "100vh" }}>
+
+            </Grid>
+            <Grid item xs={9} sx={{ bgcolor: "#222222", height: "100vh" }}>
+
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={10} sx={{ bgcolor: "#333333", height: "100vh" }}>
+          
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 
